@@ -1,0 +1,69 @@
+{
+    "version": 1,
+    "name": "ScoreChanger",
+    "maps": [
+        {
+            "name": "ScoreChanger",
+            "id": "e5d770b6-c312-46e3-a841-a8e364f13cdd",
+            "actions": [
+                {
+                    "name": "IncreaseScore",
+                    "type": "PassThrough",
+                    "id": "0cbfbb46-5282-4922-9b42-891ce8b06b5d",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "DecreaseScore",
+                    "type": "Button",
+                    "id": "d788ee00-18d3-46f2-b0cd-acf8bd51a015",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "620a88b1-fa48-4fe2-bda2-6ae93c67af56",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "IncreaseScore",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5bd66127-b5b4-47cf-97b1-8c30d2102aca",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard",
+                    "action": "DecreaseScore",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Keyboard",
+            "bindingGroup": "Keyboard",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
